@@ -1,10 +1,11 @@
-# Para Iniciar
-Ejecutar cada servicio entrando a la carpeta y ejecutando:
-npm install
-node index
+### Para Iniciar
+Ejecutar cada servicio entrando a las carpetas y ejecutando:
+#### npm install
+#### node index
 
-# Como acceder desde YARC
+### Como acceder desde YARC
   1. http://localhost:7070/auth/register
+          
      Content-Type: application/JSON
      Payload: {
               "name": "juan",
@@ -14,6 +15,7 @@ node index
 
      
   3. http://localhost:7070/auth/login
+     
      Content-Type: application/JSON
      Payload: {
               "name": "juan",
@@ -24,8 +26,10 @@ node index
      (esto retorna un Token, que se copia y se envia en cada operacion contra los servicios)
 
    4. Crear varios productos:
+      
       http://localhost:8080/product/create
-        Content-Type: application/JSON
+      
+      Content-Type: application/JSON
        Payload: {
                   "name": "rueda",
                   "description":"redonda",
@@ -33,8 +37,10 @@ node index
                  }
        Autorization: Bearer Token
    
-   5. Crear orden:
+   6. Crear orden:
+
       http://localhost:8080/product/buy
+      
         Content-Type: application/JSON
         Payload: {
                     "ids": [
